@@ -1,0 +1,15 @@
+body{
+    background-color: #24353f;
+    color: white;
+}
+.SignBtn{
+    color: white;
+    text-decoration: none;
+}
+.SignBtn:hover{
+    text-decoration: underline;
+}
+#incorrectErr,#userExist,#nameErr,#emailErr,#passErr{
+    color: red;
+    display: none;
+}

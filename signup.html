@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    
+    <div class="w-50 m-auto mt-5 p-5 text-center shadow-lg">
+        <h1 class="m-3">Smart Login System</h1>
+        <input type="text" placeholder="Enter your name" class="w-100 form-control my-3 " id="signupName">
+        <p id="nameErr">Invalid Name</p>
+        <input type="email" placeholder="Enter your email" class="w-100 form-control my-3 " id="signupEmail">
+        <p id="emailErr">Invalid email</p>
+        <input type="text" placeholder="Enter your password" class="w-100 form-control my-3" id="signupPass">
+        <p id="passErr">Weak pass</p>
+        <p id="userExist">This user already exist</p>
+        <button  class="w-100 btn btn-outline-info my-3" id="signupBtn">Signup</button>
+        <div class=" d-flex justify-content-center my-3">
+            <p>You have an account?</p><a class="SignBtn" href="index.html" >Signin</a>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
