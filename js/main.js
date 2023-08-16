@@ -21,7 +21,7 @@ if (localStorage.getItem("currentUser") != null) {
 
 // signup inputs regex
 signupName?.addEventListener("blur", function () {
-    var nameRegex = /^[A-Z]{1}[a-z]{2,}$/
+    var nameRegex = /^[A-Z]{1}[a-z]{2,}[0-9]*$/
     if (nameRegex.test(signupName.value) == false) {
         error += 1
         document.getElementById("nameErr").style.display = "block"
@@ -61,7 +61,7 @@ signupBtn?.addEventListener("click", function () {
 
     if (error == 0) {
         let index = usersList.findIndex(el => {
-            return el.name == signupName.value && el.email == signupEmail.value
+            return el.name == signupName.value || el.email == signupEmail.value
         })
         if (index == -1) {
             let userData = {
